@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskInput = document.getElementById('task-input');
     const taskList = document.getElementById('task-list');
 
+    //Load tasks from local storage and display
+    loadTasks();
+
     // Function to add a new task
     function addTask() {
         // Get the input value and trim whitespace
